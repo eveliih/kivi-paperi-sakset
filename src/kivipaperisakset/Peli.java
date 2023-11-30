@@ -45,11 +45,11 @@ public class Peli {
 
     private static  void ratkaiseEranVoittaja(Pelaaja p1, Pelaaja p2){
 
-        final boolean P1VOITTAAPAPERILLAKIVEN = (p1.getValinta().equals("paperi")) && (p2.getValinta().equals("kivi"));
-        final boolean P1VOITTAAKIVELLASAKSET = (p1.getValinta().equals("kivi")) && (p2.getValinta().equals("sakset"));
-        final boolean P1VOITTAASAKSILLAPAPERIN = (p1.getValinta().equals("sakset")) && (p2.getValinta().equals("paperi"));
+        final boolean P1VOITTAAPAPERILLA = (p1.getValinta().equals("paperi")) && (p2.getValinta().equals("kivi"));
+        final boolean P1VOITTAAKIVELLA = (p1.getValinta().equals("kivi")) && (p2.getValinta().equals("sakset"));
+        final boolean P1VOITTAASAKSILLA = (p1.getValinta().equals("sakset")) && (p2.getValinta().equals("paperi"));
 
-        if(P1VOITTAAPAPERILLAKIVEN || P1VOITTAAKIVELLASAKSET || P1VOITTAASAKSILLAPAPERIN){
+        if(P1VOITTAAPAPERILLA || P1VOITTAAKIVELLA || P1VOITTAASAKSILLA){
             p1.lisaaPelaajalleVoitto();
             System.out.println("Pelaaja 1 voittaa\n");
         }

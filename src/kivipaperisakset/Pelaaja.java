@@ -16,7 +16,7 @@ public class Pelaaja {
     /**
      * Valitse randomilla kivi, paperi tai sakset
      */
-    public void valitseVaihtoehto() {
+    public String valitseVaihtoehto() {
         int arvottuValintaNumero = (int) (Math.random() * 3);
         switch (arvottuValintaNumero) {
             case 0:
@@ -29,10 +29,12 @@ public class Pelaaja {
                 valinta = "sakset";
                 break;
         }
+        return valinta;
     }
 
-    public void lisaaPelaajalleVoitto() {
+    public int lisaaPelaajalleVoitto() {
         voitot += 1;
+        return voitot;
     }
 
     public int getVoitot() {

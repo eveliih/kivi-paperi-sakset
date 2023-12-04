@@ -10,7 +10,7 @@ class PelaajaTest  {
     void valitseVaihtoehto() {
         String valinta = pelaaja.valitseVaihtoehto();
         assertFalse(valinta.isEmpty(), "Valinta palautti tyhjän");
-        assertTrue(valinta.equals("kivi") || valinta.equals("paperi") || valinta.equals("sakset"), "Valinta palautti muuta kuin markkijonon kivi, paperi tai sakset");
+        assertTrue(valinta.equals("kivi") || valinta.equals("paperi") || valinta.equals("sakset"), "Valinta palautti muuta kuin merkkijonon kivi, paperi tai sakset");
     }
 
     @Test
